@@ -29,11 +29,75 @@
     </header>
 <br>
     <main><!--Corps principal-->
+
+                <div>
+                    <label for="Surnom">Surnom (obligatoire) :</label>
+                    <input id="Surnom" type="text" required>
+                    <button id="monBouton">Valider</button>
+                </div>
+
+        <form action ="#" method="post">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <div>
+                    <label for="Nom">Nom (obligatoire) :</label>
+                    <input id="Nom" type="text" required>
+                </div>
+                <div>
+                    <label for="prenom">Prénom (obligatoire) :</label>
+                    <input id="prenom" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email (obligatoire) :</label>
+                    <input id="email" type="email" name="email"required>
+                </div>
+                <div>
+                    <label for="telephone">Téléphone (optionnel) :</label>
+                    <input id="telephone" type="tel">
+                <div>
+                    <label for="adresse">Adresse (obligatoire) :</label>
+                    <input id="adresse" type="text" required>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <Legend>Votre commande</Legend>
+                <div>
+                    <label for="date">Date de retrait (obligatoire) :</label>
+                    <input id="date" type="date" required>
+                </div>
+                <div>
+                    <label>Produit</label>
+                    <select>
+                        <optgroup>
+                            <option value="Baguette tradition 1900">Baguette tradition 1900</option>
+                            <option value="Pain complet">Pain complet</option>
+                            <option value="Pain aux raisins">Pain aux raisins</option>
+                            <option value="Schneck">Schneck</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="typeretrait">Mode de retrait (obligatoire) :</label>
+                    <input type="radio" id="typeretrait" name="retrait" value="En magasin" checked>En magasin
+                    <input type="radio" id="typeretrait" name="retrait" value="Livraison chez vous">Livraison chez vous
+                </div>
+                <div>
+                    <input type="checkbox" id="cgv" name="cgv" required>
+                    <label for=""cgv">j'accepte les CGV</label>
+                </div>
+                </fieldset>    
+                <input type="button" value="Valider">
+            </div>
+            <Label>Merci !</Label>
+        </form>
     </main>
 
 <footer>
     <p>Adresse : 37 rue Hénot - Dax</p>
     <p>Ouvert tous les jours sauf le lundi</p>
 </footer>
+<script src="./asset/js/essai.js">
+</script>
 </body>
 </html>
